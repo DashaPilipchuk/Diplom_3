@@ -1,6 +1,6 @@
 import allure
-from Diplom_3.pages.base_page import BasePage
-from Diplom_3.locators.order_feed_page_locators import OrderFeedPageLocators
+from pages.base_page import BasePage
+from locators.order_feed_page_locators import OrderFeedPageLocators
 
 
 class OrderFeedPage(BasePage):
