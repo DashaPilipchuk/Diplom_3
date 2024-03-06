@@ -1,10 +1,10 @@
 import time
 
 import allure
-from Diplom_3.pages.main_functional_page import MainFunctionalPage
-from Diplom_3.locators.main_functional_page_locators import MainFunctionalPageLocators
-from Diplom_3.const import Urls, Constants
-from Diplom_3.pages.personal_account_page import PersonalAccountPage
+from pages.main_functional_page import MainFunctionalPage
+from locators.main_functional_page_locators import MainFunctionalPageLocators
+from const import Urls, Constants
+from pages.personal_account_page import PersonalAccountPage
 
 
 class TestMainFunctionalPageLocators:
