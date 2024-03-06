@@ -1,11 +1,11 @@
 import allure
 import pytest
 from selenium.webdriver.common.by import By
-from Diplom_3.pages.main_functional_page import MainFunctionalPage
-from Diplom_3.pages.order_feed_page import OrderFeedPage
-from Diplom_3.locators.order_feed_page_locators import OrderFeedPageLocators
-from Diplom_3.const import Urls, Constants
-from Diplom_3.pages.personal_account_page import PersonalAccountPage
+from pages.main_functional_page import MainFunctionalPage
+from pages.order_feed_page import OrderFeedPage
+from locators.order_feed_page_locators import OrderFeedPageLocators
+from const import Urls, Constants
+from pages.personal_account_page import PersonalAccountPage
 
 
 class TestOrderFeedPage:
