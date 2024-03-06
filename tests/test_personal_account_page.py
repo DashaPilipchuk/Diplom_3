@@ -1,6 +1,6 @@
 import allure
-from Diplom_3.pages.personal_account_page import PersonalAccountPage
-from Diplom_3.const import Urls, Constants
+from pages.personal_account_page import PersonalAccountPage
+from const import Urls, Constants
 
 
 class TestPersonalAccountPage:
