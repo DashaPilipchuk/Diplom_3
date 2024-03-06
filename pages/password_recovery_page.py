@@ -1,6 +1,6 @@
 import allure
 from pages.base_page import BasePage
-from Diplom_3.locators.password_recovery_page_locators import PasswordRecoveryPgeLocators
+from locators.password_recovery_page_locators import PasswordRecoveryPgeLocators
 
 
 class PasswordRecoveryPage(BasePage):
