@@ -1,6 +1,6 @@
 import allure
-from Diplom_3.pages.base_page import BasePage
-from Diplom_3.locators.personal_account_page_locators import PersonalAccountPageLocators
+from pages.base_page import BasePage
+from locators.personal_account_page_locators import PersonalAccountPageLocators
 
 
 class PersonalAccountPage(BasePage):
