@@ -1,5 +1,5 @@
 import allure
-from Diplom_3.pages.base_page import BasePage
+from pages.base_page import BasePage
 from Diplom_3.locators.password_recovery_page_locators import PasswordRecoveryPgeLocators
 
 
