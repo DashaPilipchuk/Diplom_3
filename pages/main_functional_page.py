@@ -1,6 +1,6 @@
 import allure
-from Diplom_3.pages.base_page import BasePage
-from Diplom_3.locators.main_functional_page_locators import MainFunctionalPageLocators
+from pages.base_page import BasePage
+from locators.main_functional_page_locators import MainFunctionalPageLocators
 
 
 class MainFunctionalPage(BasePage):
