@@ -1,7 +1,7 @@
 import allure
-from Diplom_3.pages.password_recovery_page import PasswordRecoveryPage
-from Diplom_3.locators.password_recovery_page_locators import PasswordRecoveryPgeLocators
-from Diplom_3.const import Urls, Constants
+from pages.password_recovery_page import PasswordRecoveryPage
+from locators.password_recovery_page_locators import PasswordRecoveryPgeLocators
+from const import Urls, Constants
 
 
 class TestPasswordRecoveryPage:
