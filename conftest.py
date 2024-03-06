@@ -2,7 +2,7 @@ import pytest
 from selenium import webdriver
 
 #тесты сделаны для прохождения на Chrome
-@pytest.fixture(params=['Chrome'])
+@pytest.fixture(params=['Chrome', 'Firefox'])
 def driver(request):
     if request.param == 'Chrome':
         driver = webdriver.Chrome()
