@@ -39,7 +39,7 @@ class TestMainFunctionalPageLocators:
         main_functional = MainFunctionalPage(driver)
         main_functional.go_to_burger_site(Urls.URL_MAIN)
         main_functional.add_ingredient_to_order()
-        assert int(main_functional.get_text_of_number_ingredient) == 1
+        assert int(main_functional.get_text_of_number_ingredient()) == 1
 
     @allure.title('create order')
     def test_create_order(self, driver):
