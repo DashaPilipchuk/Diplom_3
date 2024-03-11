@@ -1,8 +1,5 @@
-import time
-
 import allure
 from pages.main_functional_page import MainFunctionalPage
-from locators.main_functional_page_locators import MainFunctionalPageLocators
 from const import Urls, Constants
 from pages.personal_account_page import PersonalAccountPage
 
@@ -27,7 +24,7 @@ class TestMainFunctionalPageLocators:
         main_functional = MainFunctionalPage(driver)
         main_functional.go_to_burger_site(Urls.URL_MAIN)
         main_functional.click_on_ingredient()
-        assert main_functional.find_element_located(MainFunctionalPageLocators.INGREDIENT_DETAILS_POPUP_OPEN)
+        assert main_functional.find_popup_ingredient_details()
 
     @allure.title('click on cross button')
     def test_click_on_cross_button(self, driver):
@@ -35,15 +32,14 @@ class TestMainFunctionalPageLocators:
         main_functional.go_to_burger_site(Urls.URL_MAIN)
         main_functional.click_on_ingredient()
         main_functional.click_on_cross_button()
-        assert (main_functional.get_attribute(MainFunctionalPageLocators.INGREDIENT_DETAILS_POPUP_CLOSE, 'class')
-                == Constants.CLASS_POPUP_CLOSE)
+        assert main_functional.get_attribute_on_main_page(element='class') == Constants.CLASS_POPUP_CLOSE
 
     @allure.title('add ingredient')
     def test_add_ingredient(self, driver):
         main_functional = MainFunctionalPage(driver)
         main_functional.go_to_burger_site(Urls.URL_MAIN)
         main_functional.add_ingredient_to_order()
-        assert int(main_functional.get_text_of_element(MainFunctionalPageLocators.COUNTER)) == 1
+        assert int(main_functional.get_text_of_number_ingredient) == 1
 
     @allure.title('create order')
     def test_create_order(self, driver):
@@ -57,5 +53,5 @@ class TestMainFunctionalPageLocators:
         personal_account_page.click_on_login_button()
         main_functional.add_ingredient_to_order()
         main_functional.click_on_create_order_button()
-        assert main_functional.find_element_located(MainFunctionalPageLocators.CREATE_ORDER_POPUP)
+        assert main_functional.find_popup_create_order()
 

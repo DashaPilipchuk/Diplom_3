@@ -23,3 +23,7 @@ class PasswordRecoveryPage(BasePage):
     @allure.step('click on show button')
     def click_on_show_button(self):
         return self.find_element_located_click(PasswordRecoveryPgeLocators.SHOW_BUTTON)
+
+    @allure.step('find activ field')
+    def find_activ_field(self):
+        return self.find_element_located(PasswordRecoveryPgeLocators.ACTIV_FIELD)

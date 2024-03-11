@@ -1,6 +1,5 @@
 import allure
 from pages.password_recovery_page import PasswordRecoveryPage
-from locators.password_recovery_page_locators import PasswordRecoveryPgeLocators
 from const import Urls, Constants
 
 
@@ -29,4 +28,4 @@ class TestPasswordRecoveryPage:
         password_recovery_page.fill_email_field(email=Constants.EMAIL_FOR_RECOVERY)
         password_recovery_page.click_on_recovery_button()
         password_recovery_page.click_on_show_button()
-        assert password_recovery_page.find_element_located(PasswordRecoveryPgeLocators.ACTIV_FIELD)
+        assert password_recovery_page.find_activ_field()
